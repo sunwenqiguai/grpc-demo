@@ -17,7 +17,7 @@ public class HelloWorldServer {
 
     private Server server;
     private void start() throws IOException {
-        int port = 50001;
+        int port = 50051;
         server = ServerBuilder.forPort(port)
                 .addService(new GreeterImpl())
                 .build()
@@ -60,7 +60,7 @@ public class HelloWorldServer {
     static class GreeterImpl extends GreeterGrpc.GreeterImplBase {
         @Override
         public void sayHello(HelloRequest request, StreamObserver<HelloReply> responseObserver) {
-            super.sayHello(request, responseObserver);
+//            super.sayHello(request, responseObserver);
             HelloReply reply = HelloReply.newBuilder().setMessage("Hello " + request.getName()).build();
             responseObserver.onNext(reply);
             responseObserver.onCompleted();
