@@ -1,4 +1,4 @@
-package com.swq.grpcdemo.hellowrold.client;
+package com.swq.grpcdemo.helloworld.client;
 
 /*
  * Copyright 2015, gRPC Authors All rights reserved.
@@ -17,9 +17,8 @@ package com.swq.grpcdemo.hellowrold.client;
  */
 
 import com.swq.grpcdemo.helloworld.HelloReply;
-import com.swq.grpcdemo.hellowrold.GreeterGrpc;
-import com.swq.grpcdemo.hellowrold.HelloRequest;
-import com.swq.grpcdemo.hellowrold.server.HelloWorldServer;
+import com.swq.grpcdemo.helloworld.GreeterGrpc;
+import com.swq.grpcdemo.helloworld.server.HelloWorldServer;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.StatusRuntimeException;

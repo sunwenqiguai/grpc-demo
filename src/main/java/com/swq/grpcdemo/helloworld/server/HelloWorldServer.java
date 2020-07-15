@@ -1,12 +1,12 @@
-package com.swq.grpcdemo.hellowrold.server;
+package com.swq.grpcdemo.helloworld.server;
 
+
+import com.swq.grpcdemo.helloworld.GreeterGrpc;
 import com.swq.grpcdemo.helloworld.HelloReply;
 import com.swq.grpcdemo.helloworld.HelloRequest;
-import com.swq.grpcdemo.hellowrold.GreeterGrpc;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
 import io.grpc.stub.StreamObserver;
-import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.util.logging.Logger;
